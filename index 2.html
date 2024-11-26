@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Matemática</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tooltip-container2">
+        <span class="tooltip2">Ir a Inicio</span>
+        <a href="index.html" class="text2">IR</a>
+      </div>
+    <div class="Sistema-de-2">
+        <!-- Ecuación Cuadrática -->
+        <!-- Sistema de Ecuaciones -->
+        <section>
+            <h2>Sistema de Ecuaciones</h2>
+            <p>Sistema de 2 variables</p>
+            <input type="number" id="a1" placeholder="A1x +">
+            <input type="number" id="b1" placeholder="B1y">
+            <input type="number" id="c1" placeholder="= c1">
+            <input type="number" id="a2" placeholder="a2x +">
+            <input type="number" id="b2" placeholder="b2y">
+            <input type="number" id="c2" placeholder="= c2">
+            <button onclick="resolverSistema2()" class="calculo-cuadratico2">Calcular</button>
+            <p id="resultadoSistema2"></p>
+        </section>
+    </div>
+    <div class="Sistema-de-3">
+        <h2 class="variables-de-3">Sistema de 3 variables</h2>
+        <input type="number" id="a3" placeholder="A3x +">
+        <input type="number" id="b3" placeholder="B3y +">
+        <input type="number" id="c3" placeholder="C3z">
+        <input type="number" id="d3" placeholder="= d3">
+        <input type="number" id="a4" placeholder="A4x +">
+        <input type="number" id="b4" placeholder="B4y +">
+        <input type="number" id="c4" placeholder="C4z">
+        <input type="number" id="d4" placeholder="= d4">
+        <input type="number" id="a5" placeholder="a5x +">
+        <input type="number" id="b5" placeholder="b5y +">
+        <input type="number" id="c5" placeholder="c5z">
+        <input type="number" id="d5" placeholder="= d5">
+        <button onclick="resolverSistema3()" class="calculo-cuadratico">Calcular</button>
+        <p id="resultadoSistema3"></p>
+        </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

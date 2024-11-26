@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Matemática</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="tooltip-container">
+  <span class="tooltip">Ir a Inicio</span>
+  <a href="index.html" class="text">IR</a>
+</div>
+    <div class="container">
+        <!-- Ecuación Cuadrática -->
+            <h2>Calculadora de Ecuaciones Cuadráticas</h2>
+            <p>Forma: ax² + bx + c = 0</p>
+            <input type="number" id="a" placeholder="Ax² +">
+            <input type="number" id="b" placeholder="Bx +">
+            <input type="number" id="c" placeholder="c = 0">
+            <button onclick="resolverCuadratica()" class="calculo-cuadratico3">Calcular</button>
+            <p id="resultadoCuadratica"></p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

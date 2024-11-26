@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+h1 {
+    color: #2d6a4f;
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(34% - 22px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 12px;
+}
+
+.text1 {
+    padding: 10px;
+    background-color: #2d6a4f;
+    color: #2d6a4f;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    top: 17px;
+    position: relative;
+    top: 37px;
+    text-decoration: none;
+}
+
+.text2 {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.btn-17,
+.btn-17 * {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-17 {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #2d6a4f;
+  color: #fff; /* Mantén el color del texto blanco */
+  cursor: pointer;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+  border-radius: 7px;
+  padding: 0.7em 0.89em;
+  z-index: 0;
+  top: 43px;
+}
+
+.btn-17:disabled {
+  cursor: default;
+}
+
+.btn-17:-moz-focusring {
+  outline: auto;
+}
+
+.btn-17 .text-container {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-17 .text {
+  display: block;
+  color: white; /* Color del texto en blanco */
+  position: relative;
+  z-index: 1; /* Asegura que el texto esté al frente */
+  text-decoration: none;
+  font-size: 16px;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+  Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+  Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.btn-17:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+
+/* Animación para el texto */
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Efecto de "cortina" */
+.btn-17:after,
+.btn-17:before {
+  --skew: 0.2;
+  background: #4db687;
+  content: "";
+  display: block;
+  height: 102%;
+  left: calc(-50% - 50% * var(--skew));
+  pointer-events: none;
+  position: absolute;
+  top: -104%;
+  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: 100%;
+  z-index: -1; /* Ubicado detrás del texto */
+}
+
+.btn-17:after {
+  --progress: 0%;
+  left: calc(50% + 50% * var(--skew));
+  top: 102%;
+}
+
+.btn-17:hover:before {
+  --progress: 100%;
+}
+
+.btn-17:hover:after {
+  --progress: -102%;
+}
+
+
+.enlace-1 {
+  --bg: #3d906b;
+  --hover-bg: #4db687;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+  Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+  Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.enlace-1:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.enlace-1:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+
+.calculo-cuadratico2 {
+    padding: 10px;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    position: relative;
+    top: 9px;
+}
+
+.calculo-cuadratico {
+    padding: 10px;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+}
+
+.calculo-cuadratico3 {
+    padding: 10px;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+}
+
+
+p {
+    margin-top: 19px;
+    font-size: .9em;
+}
+
+.variables-de-3 {
+  margin-top: 9px;
+  margin-bottom: 22px;
+  position: relative;
+  color: #000;
+}
+
+h2{
+    margin-top: 39px;
+    position: relative;
+    color: #000;
+}
+
+.enlace-1 {
+    width: 100%;
+    padding: 10px;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    top: 17px;
+    position: relative;
+    text-decoration: none;
+}
+
+.container1{
+    width: 350px;
+    margin-right: 56px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 106px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 41px;
+    margin-top: 107px;
+    padding-bottom: 40px;
+    position: relative;
+
+}
+
+.acce{
+    margin-top: 12px;
+}
+
+.container {
+    width: 367px;
+    margin-right: 56px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 32px;
+}
+
+.Sistema-de-2 {
+  width: 667px;
+  margin-right: 56px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-left: 32px;
+  padding-top: 61px;
+}
+
+.Sistema-de-3 {
+  width: 912px;
+  margin-right: 25px;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 106px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 103px;
+  padding-bottom: 0px;
+  position: relative;
+  top: 0;
+
+}
+
+
+h1{
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 8px;
+    position: absolute;
+    top: 23px;
+
+}
+
+.tooltip-container {
+  --background: linear-gradient(45deg, #3d906b, #4db687);
+  position: relative;
+  background: var(--background);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 17px;
+  padding: 0.7em 1.8em;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  transform-origin: bottom;
+  padding: 0.3em 0.6em;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  background: var(--background);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90px;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  height: 0.6em;
+  width: 0.6em;
+  bottom: -0.2em;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  background: var(--background);
+}
+
+.tooltip-container:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) scale(1);
+}
+.tooltip-container:hover {
+  transform: scale(0.9);
+}
+
+
+/* From Uiverse.io by JhaveLang */ 
+/* This is an example, feel free to delete this code */
+.tooltip-container2 {
+    --background: linear-gradient(45deg, #3d906b, #4db687);
+    position: relative;
+    background: var(--background);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 0.7em 1.8em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    left: 22px;
+    
+  }
+  
+  .tooltip2 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    transform-origin: bottom;
+    padding: 0.3em 0.6em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: var(--background);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90px;
+  }
+  
+  .tooltip2::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--background);
+  }
+  
+  .tooltip-container2:hover .tooltip2 {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+  }
+  .tooltip-container2:hover {
+    transform: scale(0.9);
+  }
+  
+  .text{
+    text-decoration: none;
+    color: #fff;
+  }
